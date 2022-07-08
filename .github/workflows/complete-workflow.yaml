@@ -15,14 +15,14 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      with:
-          #projectBaseDir: my-custom-directory
-          args: >
-            -Dsonar.organization=javaprojectreachability
-            -Dsonar.projectKey=javaprojectreachability
-            -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.sources=
-            -Dsonar.test.exclusions=
-            -Dsonar.tests=
-            -Dsonar.verbose=true
+#      with:
+#         projectBaseDir: my-custom-directory
+#           args: >
+#             -Dsonar.organization=javaprojectreachability
+#             -Dsonar.projectKey=javaprojectreachability
+#             -Dsonar.python.coverage.reportPaths=coverage.xml
+#             -Dsonar.sources=
+#             -Dsonar.test.exclusions=
+#             -Dsonar.tests=
+#             -Dsonar.verbose=true
  
