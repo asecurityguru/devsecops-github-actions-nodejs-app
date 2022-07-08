@@ -21,7 +21,7 @@ jobs:
             -Dsonar.organization=javaprojectreachability
             -Dsonar.projectKey=javaprojectreachability
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.sources=views
+            -Dsonar.sources=
             -Dsonar.test.exclusions=
             -Dsonar.tests=
             -Dsonar.verbose=true
