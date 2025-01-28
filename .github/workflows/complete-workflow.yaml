@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Run unit tests and SAST scan on the source code 
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: 16
+        node-version: 21
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
@@ -18,8 +18,8 @@ jobs:
       with:
 #        projectBaseDir: my-custom-directory
         args: >
-          -Dsonar.organization=javaprojectreachability
-          -Dsonar.projectKey=javaprojectreachability
+          -Dsonar.organization=dotnetgithubactionsorg
+          -Dsonar.projectKey=dotnetgithubactionsproject
 #             -Dsonar.python.coverage.reportPaths=coverage.xml
 #             -Dsonar.sources=
 #             -Dsonar.test.exclusions=
